@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Conversion</title>
+</head>
+<body>
+    <h1>Currency Conversion</h1>
+    <div id="currencyPrices">
+        <div>
+            <strong>EUR</strong>: <span data-sly-use.currency="${'com.aviva.core.service.CurrencyService' @ 'currency' = 'USD, EUR'}">
+                <span data-sly-list="${currency}">${currency.name} - ${currency.price}</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
